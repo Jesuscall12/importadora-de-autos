@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sti Mechanic's & Importadora de Autos | Subastas y Mecánica Especializada</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stiCyan: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2'
+                        },
+                        stiDark: {
+                            900: '#0f172a',
+                            950: '#060913'
+                        },
+                        stiYellow: '#facc15'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stiDark-950 text-slate-100 font-sans antialiased selection:bg-stiCyan-500 selection:text-stiDark-950">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-stiDark-900 border-b border-cyan-500/30 text-xs py-2 px-4 text-center sm:flex sm:justify-between sm:items-center text-slate-300">
+        <span><i class="fa-solid fa-wrench text-stiCyan-400 mr-2"></i>Sti Mechanic's (Est. 2018) • Importación Directa y Taller Especializado</span>
+        <div class="mt-1 sm:mt-0 font-bold flex gap-4 justify-center">
+            <a href="https://wa.me/50372435871" target="_blank" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp: 7243-5871
+            </a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="sticky top-0 z-40 bg-stiDark-900/95 backdrop-blur-md border-b border-stiDark-900 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex justify-between items-center">
+            
+            <!-- Logo Branding -->
+            <div class="flex items-center gap-3">
+                <div class="relative w-14 h-14 rounded-2xl bg-stiDark-950 border-2 border-stiCyan-400 flex items-center justify-center shadow-md shadow-stiCyan-500/20">
+                    <i class="fa-solid fa-gauge-high text-stiCyan-400 text-2xl"></i>
+                    <span class="absolute -bottom-2 bg-stiYellow text-stiDark-950 text-[9px] font-extrabold px-1.5 py-0.5 rounded-full">2018</span>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold text-white tracking-wider block leading-tight">STI MECHANIC'S</span>
+                    <span class="text-[10px] text-stiCyan-400 tracking-widest uppercase font-semibold block">Importadora & Taller Automotriz</span>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#catalogo" class="hover:text-stiCyan-400 transition-colors">Vehículos Disponibles</a>
+                <a href="#subastas" class="hover:text-stiCyan-400 transition-colors">Subastas en Vivo</a>
+                <a href="#taller" class="hover:text-stiCyan-400 transition-colors">Taller & Mecánica</a>
+                <a href="#cotizador" class="hover:text-stiCyan-400 transition-colors">Cotizar Encargo</a>
+            </div>
+
+            <div>
+                <a href="#cotizador" class="bg-gradient-to-r from-stiCyan-500 to-stiCyan-600 hover:from-stiCyan-400 hover:to-stiCyan-500 text-stiDark-950 font-bold px-5 py-2.5 rounded-xl transition-all text-sm shadow-md flex items-center gap-2">
+                    <i class="fa-solid fa-car"></i> Cotizar Auto
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative py-24 px-4 border-b border-stiDark-900 bg-gradient-to-b from-stiDark-900 via-stiDark-950 to-stiDark-950 overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-stiCyan-500/10 border border-stiCyan-400/35 text-stiCyan-400 rounded-full text-xs font-bold tracking-wider uppercase mb-6">
+                <i class="fa-solid fa-bolt text-stiYellow"></i> Potencia, Rendimiento y Confianza Desde 2018
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Importación de Autos y Mecánica de Alto Rendimiento
+            </h1>
+            <p class="text-lg text-slate-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Traemos tu vehículo directamente de subastas en EE. UU. con respaldo mecánico especializado, diagnóstico computarizado y entrega garantizada.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#subastas" class="bg-stiCyan-500 hover:bg-stiCyan-600 text-stiDark-950 font-extrabold px-8 py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-gavel"></i> Ver Subastas Activas
+                </a>
+                <a href="#taller" class="bg-stiDark-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold px-8 py-4 rounded-xl transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-screwdriver-wrench text-stiCyan-400"></i> Servicios de Taller
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catálogo de Vehículos -->
+    <section id="catalogo" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-stiCyan-400 text-xs uppercase tracking-widest font-bold">Stock y En Tránsito</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight mt-1">Vehículos Disponibles</h2>
+        </div>
+
+        <!-- Filtros -->
+        <div class="flex justify-center gap-3 mb-10 flex-wrap">
+            <button onclick="filterVehicles('todos')" class="filter-btn active bg-stiCyan-500 text-stiDark-950 font-bold px-5 py-2 rounded-lg text-sm transition-all">Todos</button>
+            <button onclick="filterVehicles('suv')" class="filter-btn bg-stiDark-900 text-slate-300 border border-slate-800 hover:border-stiCyan-400 font-medium px-5 py-2 rounded-lg text-sm transition-all">SUVs</button>
+            <button onclick="filterVehicles('sedan')" class="filter-btn bg-stiDark-900 text-slate-300 border border-slate-800 hover:border-stiCyan-400 font-medium px-5 py-2 rounded-lg text-sm transition-all">Sedanes</button>
+            <button onclick="filterVehicles('pickup')" class="filter-btn bg-stiDark-900 text-slate-300 border border-slate-800 hover:border-stiCyan-400 font-medium px-5 py-2 rounded-lg text-sm transition-all">Pickups</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="vehicle-item suv bg-stiDark-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-stiCyan-500/50 transition-all">
+                <div class="h-56 bg-stiDark-950 relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Subaru Forester" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-stiCyan-500 text-stiDark-950 text-xs font-bold px-3 py-1 rounded-full">En Tránsito</span>
+                    <span class="absolute top-3 right-3 bg-stiDark-950/90 text-stiYellow text-xs font-bold px-3 py-1 rounded-full border border-stiYellow/30">Año 2021</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-1">Subaru Forester AWD</h3>
+                    <p class="text-xs text-slate-400 mb-4">Boxer 2.5L • 38,000 Mi • Automática</p>
+                    <div class="flex justify-between items-center border-t border-slate-800 pt-4">
+                        <span class="text-xs text-slate-400">Precio Estimado Llave en Mano:</span>
+                        <span class="text-lg font-extrabold text-emerald-400">$17,500</span>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://wa.me/50372435871?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20la%20Subaru%20Forester%202021" target="_blank" class="w-full text-center block bg-stiDark-950 hover:bg-stiCyan-500 text-slate-200 hover:text-stiDark-950 font-bold py-3 rounded-xl transition-all text-sm border border-slate-800">
+                        Consultar Detalles
+                    </a>
+                </div>
+            </div>
+
+            <div class="vehicle-item sedan bg-stiDark-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-stiCyan-500/50 transition-all">
+                <div class="h-56 bg-stiDark-950 relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Honda Civic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">Disponible Local</span>
+                    <span class="absolute top-3 right-3 bg-stiDark-950/90 text-stiYellow text-xs font-bold px-3 py-1 rounded-full border border-stiYellow/30">Año 2022</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-1">Honda Civic Sport</h3>
+                    <p class="text-xs text-slate-400 mb-4">Motor 2.0L • 25,000 Mi • Pantalla Touch</p>
+                    <div class="flex justify-between items-center border-t border-slate-800 pt-4">
+                        <span class="text-xs text-slate-400">Precio Local:</span>
+                        <span class="text-lg font-extrabold text-emerald-400">$15,200</span>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://wa.me/50372435871?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20el%20Honda%20Civic%20Sport" target="_blank" class="w-full text-center block bg-stiDark-950 hover:bg-stiCyan-500 text-slate-200 hover:text-stiDark-950 font-bold py-3 rounded-xl transition-all text-sm border border-slate-800">
+                        Consultar Detalles
+                    </a>
+                </div>
+            </div>
+
+            <div class="vehicle-item pickup bg-stiDark-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-stiCyan-500/50 transition-all">
+                <div class="h-56 bg-stiDark-950 relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=800&q=80" alt="Toyota Tacoma" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-stiCyan-500 text-stiDark-950 text-xs font-bold px-3 py-1 rounded-full">En Tránsito</span>
+                    <span class="absolute top-3 right-3 bg-stiDark-950/90 text-stiYellow text-xs font-bold px-3 py-1 rounded-full border border-stiYellow/30">Año 2020</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-1">Toyota Tacoma TRD 4x4</h3>
+                    <p class="text-xs text-slate-400 mb-4">V6 3.5L • 48,000 Mi • 4WD</p>
+                    <div class="flex justify-between items-center border-t border-slate-800 pt-4">
+                        <span class="text-xs text-slate-400">Precio Estimado Llave en Mano:</span>
+                        <span class="text-lg font-extrabold text-emerald-400">$26,800</span>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://wa.me/50372435871?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20la%20Toyota%20Tacoma" target="_blank" class="w-full text-center block bg-stiDark-950 hover:bg-stiCyan-500 text-slate-200 hover:text-stiDark-950 font-bold py-3 rounded-xl transition-all text-sm border border-slate-800">
+                        Consultar Detalles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subastas en Vivo -->
+    <section id="subastas" class="py-20 bg-stiDark-900 border-t border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="bg-red-500/10 text-red-400 text-xs font-bold px-4 py-1.5 rounded-full border border-red-500/30 uppercase tracking-widest animate-pulse">
+                    <i class="fa-solid fa-circle text-[8px] mr-1"></i> Lotes en Subasta (Copart / IAAI)
+                </span>
+                <h2 class="text-3xl font-bold text-white mt-3">Subastas en Tiempo Real</h2>
+                <p class="text-slate-400 mt-2 text-sm max-w-xl mx-auto">Seleccionamos unidades con potencial y bajo daño para optimizar tu inversión con respaldo técnico.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-stiDark-950 border border-slate-800 p-6 rounded-2xl flex flex-col sm:flex-row gap-6 items-center">
+                    <div class="w-full sm:w-48 h-36 bg-slate-900 rounded-xl overflow-hidden relative flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" alt="Subasta" class="w-full h-full object-cover">
+                        <span class="absolute bottom-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">Copart</span>
+                    </div>
+                    <div class="w-full">
+                        <span class="text-xs text-stiYellow font-bold block mb-1"><i class="fa-solid fa-clock mr-1"></i>Cierra en 14 horas</span>
+                        <h4 class="text-lg font-bold text-white">Subaru WRX Premium 2021</h4>
+                        <p class="text-xs text-slate-400 mb-3">Daño frontal leve • Run & Drive</p>
+                        <a href="https://wa.me/50372435871?text=Quiero%20participar%20en%20la%20subasta%20del%20Subaru%20WRX" target="_blank" class="inline-block bg-stiCyan-500 hover:bg-stiCyan-600 text-stiDark-950 text-xs font-extrabold px-4 py-2 rounded-lg transition-all">
+                            Pre-ofertar vía WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-stiDark-950 border border-slate-800 p-6 rounded-2xl flex flex-col sm:flex-row gap-6 items-center">
+                    <div class="w-full sm:w-48 h-36 bg-slate-900 rounded-xl overflow-hidden relative flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&w=800&q=80" alt="Subasta" class="w-full h-full object-cover">
+                        <span class="absolute bottom-2 left-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">IAAI</span>
+                    </div>
+                    <div class="w-full">
+                        <span class="text-xs text-stiYellow font-bold block mb-1"><i class="fa-solid fa-clock mr-1"></i>Cierra Mañana</span>
+                        <h4 class="text-lg font-bold text-white">Mazda 3 Hatchback 2022</h4>
+                        <p class="text-xs text-slate-400 mb-3">Recuperado de Aseguradora • Sin daños de motor</p>
+                        <a href="https://wa.me/50372435871?text=Quiero%20participar%20en%20la%20subasta%20del%20Mazda%203" target="_blank" class="inline-block bg-stiCyan-500 hover:bg-stiCyan-600 text-stiDark-950 text-xs font-extrabold px-4 py-2 rounded-lg transition-all">
+                            Pre-ofertar vía WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taller y Mecánica Especializada (Sello Sti Mechanic's) -->
+    <section id="taller" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-stiCyan-400 text-xs uppercase tracking-widest font-bold">Respaldo Técnico</span>
+            <h3 class="text-3xl font-bold text-white tracking-tight mt-1">Servicios de Taller & Diagnóstico Sti</h3>
+            <p class="text-slate-400 mt-2 text-sm">Garantizamos que cada vehículo importado salga en óptimas condiciones mecánicas y electrónicas.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-stiDark-900 border border-slate-800 p-6 rounded-2xl hover:border-stiCyan-500/50 transition-all">
+                <div class="w-12 h-12 bg-stiCyan-500/10 text-stiCyan-400 rounded-xl flex items-center justify-center text-xl mb-4 border border-stiCyan-400/30">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2">Diagnóstico Computarizado</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Escaneo avanzado multimarca para borrado de códigos, calibración de sensores y módulos.</p>
+            </div>
+
+            <div class="bg-stiDark-900 border border-slate-800 p-6 rounded-2xl hover:border-stiCyan-500/50 transition-all">
+                <div class="w-12 h-12 bg-stiCyan-500/10 text-stiCyan-400 rounded-xl flex items-center justify-center text-xl mb-4 border border-stiCyan-400/30">
+                    <i class="fa-solid fa-gauge"></i>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2">Mantenimiento de Turbos & Motor</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Especialistas en sistemas de inducción forzada, afinación mayor y optimización de motores.</p>
+            </div>
+
+            <div class="bg-stiDark-900 border border-slate-800 p-6 rounded-2xl hover:border-stiCyan-500/50 transition-all">
+                <div class="w-12 h-12 bg-stiCyan-500/10 text-stiCyan-400 rounded-xl flex items-center justify-center text-xl mb-4 border border-stiCyan-400/30">
+                    <i class="fa-solid fa-car-burst"></i>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2">Enderezado, Pintura & Detalles</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Reconstrucción estética profesional de carrocería para dejar los autos importados como nuevos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotizador / Encargo a Medida -->
+    <section id="cotizador" class="py-20 bg-stiDark-900 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <span class="text-stiCyan-400 text-xs font-bold uppercase tracking-widest">Encargo Personalizado</span>
+                <h3 class="text-3xl font-bold text-white mt-1">Cotiza tu Vehículo o Servicio de Taller</h3>
+                <p class="text-slate-400 text-sm mt-2">Envíanos tus requerimientos y nuestro equipo te responderá de inmediato.</p>
+            </div>
+
+            <form onsubmit="sendCustomRequest(event)" class="bg-stiDark-950 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Servicio Requerido</label>
+                        <select id="service-type" class="w-full bg-stiDark-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-stiCyan-400">
+                            <option value="Importación de Vehículo">Importación de Vehículo desde Subasta</option>
+                            <option value="Servicio de Taller / Diagnóstico">Servicio de Taller / Diagnóstico Mecánico</option>
+                            <option value="Reparación de Turbo / Motor">Reparación de Turbo / Motor</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Detalle / Modelo / Año</label>
+                        <input type="text" id="car-detail" placeholder="Ej. Subaru WRX 2020 o Falla en motor" required class="w-full bg-stiDark-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-stiCyan-400">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Presupuesto Estimado o Comentarios</label>
+                    <input type="text" id="car-budget" placeholder="Ej. $14,000 USD o revisión general" required class="w-full bg-stiDark-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-stiCyan-400">
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Enviar Solicitud a WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stiDark-950 border-t border-slate-800 py-12 px-4 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Sti Mechanic's. Todos los derechos reservados. WhatsApp: 7243-5871</p>
+    </footer>
+
+    <!-- Script de Filtros y Cotizador -->
+    <script>
+        function filterVehicles(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-stiCyan-500', 'text-stiDark-950', 'font-bold');
+                btn.classList.add('bg-stiDark-900', 'text-slate-300');
+            });
+            event.target.classList.remove('bg-stiDark-900', 'text-slate-300');
+            event.target.classList.add('bg-stiCyan-500', 'text-stiDark-950', 'font-bold');
+
+            document.querySelectorAll('.vehicle-item').forEach(item => {
+                if (category === 'todos' || item.classList.contains(category)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function sendCustomRequest(event) {
+            event.preventDefault();
+            const service = document.getElementById('service-type').value;
+            const detail = document.getElementById('car-detail').value;
+            const budget = document.getElementById('car-budget').value;
+
+            const msg = `Hola Sti Mechanic's,%0A%0ADeseo solicitar información sobre:%0A%0A• Servicio: ${service}%0A• Detalle/Modelo: ${detail}%0A• Presupuesto/Comentario: ${budget}%0A%0A¿Podrían brindarme asesoría?`;
+            
+            window.open(`https://wa.me/50372435871?text=${msg}`, '_blank');
+        }
+    </script>
+</body>
+</html>
